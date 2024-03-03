@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Sunbeams
     second: {fileID: 2100000, guid: ea193445f50734c4e82eedfc52c467bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black
+    second: {fileID: 2100000, guid: 5f7ea44feb99ce34c8eb315e0aefb246, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
