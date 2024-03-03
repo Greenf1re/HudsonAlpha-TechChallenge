@@ -33,7 +33,7 @@ public class LlmOverHttp : MonoBehaviour
     }
     public string ip = "127.0.0.1";
     public int port = 11434;
-    public string postUrl = "/api/embeddings";
+    public string postUrl = "/api/generate";
     public Response response = new Response();
     public LlmRequest llmRequest = new LlmRequest();
     public TextMeshPro text;

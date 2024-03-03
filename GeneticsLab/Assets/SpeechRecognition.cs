@@ -15,6 +15,7 @@ namespace HuggingFace.API.Examples {
         public bool recording;
         public LlmOverHttp llm;
         public bool success = false;
+        public bool setIP = false;
 
         private void Start() {
             // startButton.onClick.AddListener(StartRecording);
@@ -56,9 +57,15 @@ namespace HuggingFace.API.Examples {
             HuggingFaceAPI.AutomaticSpeechRecognition(bytes, response => {
                 text.color = Color.white;
                 text.text = response;
-                llm.llmRequest.prompt = response;
                 success = true;
-                llm.SendRequest();
+                if(!setIP) {
+                    llm.llmRequest.prompt = response;
+                    llm.SendRequest();
+                }
+                else{
+                    llm.ip = response;
+                }
+                
                 // startButton.interactable = true;
             }, error => {
                 text.color = Color.red;
