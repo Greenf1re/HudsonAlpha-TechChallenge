@@ -1,7 +1,6 @@
 using EasyButtons;
 using HuggingFace.API.Examples;
 using UnityEngine;
-using EasyButtons;
 // using UnityEngine.InputSystem;
 
 public class AI_Manager : MonoBehaviour
