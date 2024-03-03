@@ -3314,9 +3314,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1571252781}
-        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: Host
+      - m_Target: {fileID: 833128619}
+        m_TargetAssemblyTypeName: HuggingFace.API.Examples.SpeechRecognition, Assembly-CSharp
+        m_MethodName: StartRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6268,9 +6268,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1000405711}
-        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: Client
+      - m_Target: {fileID: 1430826165}
+        m_TargetAssemblyTypeName: HuggingFace.API.Examples.SpeechRecognition, Assembly-CSharp
+        m_MethodName: StopRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7833,9 +7833,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1000405711}
-        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: Host
+      - m_Target: {fileID: 1430826165}
+        m_TargetAssemblyTypeName: HuggingFace.API.Examples.SpeechRecognition, Assembly-CSharp
+        m_MethodName: StartRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11433,9 +11433,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1571252781}
-        m_TargetAssemblyTypeName: ButtonFunctions, Assembly-CSharp
-        m_MethodName: Client
+      - m_Target: {fileID: 833128619}
+        m_TargetAssemblyTypeName: HuggingFace.API.Examples.SpeechRecognition, Assembly-CSharp
+        m_MethodName: StopRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
