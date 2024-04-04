@@ -100,6 +100,11 @@ public class Relay : MonoBehaviour
     // Helper method to print the current state of the NetworkManager
     private void PrintNetworkManagerState()
     {
+        if(NetworkManager.Singleton == null)
+        {
+            Debug.LogWarning("NetworkManager is null.");
+            return;
+        }
         if (NetworkManager.Singleton.IsHost)
         {
             Debug.Log("Current NetworkManager state: Host");

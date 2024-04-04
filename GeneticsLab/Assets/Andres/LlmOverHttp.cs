@@ -5,7 +5,7 @@ using EasyButtons;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using Meta.WitAi.TTS.Utilities;
 
 public class LlmOverHttp : MonoBehaviour
 {
@@ -37,6 +37,7 @@ public class LlmOverHttp : MonoBehaviour
     public Response response = new Response();
     public LlmRequest llmRequest = new LlmRequest();
     public TextMeshPro text;
+    public TTSSpeaker ttsSpeaker;
     public UnityWebRequest CreateApiGetRequest(string actionUrl, object body = null)
     {
         return CreateApiRequest(actionUrl, UnityWebRequest.kHttpVerbGET, body);
@@ -85,7 +86,18 @@ public class LlmOverHttp : MonoBehaviour
         if (request.result == UnityWebRequest.Result.Success)
         {
             Debug.Log("POST request sent successfully");
-            Debug.Log(request.downloadHandler.text);
+            // Debug.Log(request.downloadHandler.text);
+            response = JsonUtility.FromJson<Response>(request.downloadHandler.text);
+            text.text = response.response;
+            if (ttsSpeaker != null)
+            {
+                Debug.Log("TTS Speaker found " + response.response);
+                ttsSpeaker.Speak(response.response);
+            }
+            else
+            {
+                Debug.LogError("No TTS Speaker found");
+            }
         }
         else
         {
@@ -94,8 +106,7 @@ public class LlmOverHttp : MonoBehaviour
         // Print the response
         // Debug.Log("Response: " + request.downloadHandler.text);
         // Get just the response field from the JSON
-        response = JsonUtility.FromJson<Response>(request.downloadHandler.text);
-        text.text = response.response;
+        
         // Debug.Log("Response: " + response.response);
     }
     // IEnumerator SendPostRequest()
