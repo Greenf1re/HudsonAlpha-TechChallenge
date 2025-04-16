@@ -68,8 +68,9 @@ namespace HuggingFace.API.Examples {
                 
                 // startButton.interactable = true;
             }, error => {
-                text.color = Color.red;
-                text.text = error;
+                // text.color = Color.red;
+                // text.text = error;
+                Debug.LogError(error);
                 // startButton.interactable = true;
             });
         }

@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Uyen/FindHiddenObjGame.unity
     guid: 2674c2ee33759714d87d73e399aad516
+  - enabled: 1
+    path: Assets/Andres/Scenes/06_Soccer.unity
+    guid: ebc4ea1953a53c04991978a4e3a1a003
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bc541efdeee864248bceb84933c1b87b,
       type: 2}
