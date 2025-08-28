@@ -34,7 +34,7 @@ MonoBehaviour:
   requiresSystemKeyboard: 0
   experimentalFeaturesEnabled: 0
   insightPassthroughEnabled: 0
-  _insightPassthroughSupport: 0
+  _insightPassthroughSupport: 1
   _processorFavor: 0
   systemSplashScreen: {fileID: 2800000, guid: b497f9f02b0ac724b8a27062ca416b95, type: 3}
   systemSplashScreenType: 0
