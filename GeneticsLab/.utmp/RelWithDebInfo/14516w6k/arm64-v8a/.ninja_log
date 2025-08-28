@@ -1,0 +1,10 @@
+# ninja log v5
+255	2547	7780426648358287	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	c5834a5531915c20
+89	2575	7780426648675484	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	f41047d812a1ae0a
+3	2647	7780426649407158	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	8dd9fbd934a96584
+438	2699	7780426649956983	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	ae1c62070c5489e8
+533	2810	7780426651090452	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	c07caa66bd365328
+361	3000	7780426653009815	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	fcdb69ec323a811e
+618	3094	7780426653941177	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e12c68c533b92645
+175	3104	7780426653991653	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	5d280c1cad3fa6e1
+3106	3579	7780426658828107	F:/UnityProjects/HATCH/HudsonAlpha-TechChallenge-New/GeneticsLab/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/14516w6k/obj/arm64-v8a/libgame.so	48076e98df2da8d4
